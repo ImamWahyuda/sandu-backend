@@ -53,5 +53,6 @@ app.get("/api/data/:nik", async (req, res) => {
     res.send(result);
 })
 
+const PORT = process.env.PORT || 8888;
 
-app.listen(8888, () => console.log("This app is listening on port 8888"));
+app.listen(PORT, () => console.log(`This app is listening on port ${PORT}`));
